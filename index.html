@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adenozintriphosphat</title>
+    <title>Two Pictures and Text Field</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 10px;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
         }
-        .container {
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container {
             display: flex;
-            align-items: flex-start;
+            justify-content: center;
+            margin-bottom: 20px;
         }
-        .gif-box {
-            margin-right: 20px;
-        }
-        .gif-box img {
-            max-width: 10em;
+        .image-container img {
+            width: 50%;
             height: auto;
-            border: 1px solid #ccc;
-            padding: 0px;
-            background-color: #f9f9f9;
         }
-        .text {
-            max-width: 600px;
+        .text-field {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Adenozintriphosphat</h1>
-    <div class="container">
-        <div class="gif-box">
-            <img src="ATP.gif" alt="Sample GIF">
-        </div>
-        <div class="text">
-            <p>
-                Adenozintriphosphat (ATP) wird oft als die in den lebenden Zellen verwendete Energiewährung bezeichnet. Das liegt daran, dass die Zellen die Energie, die sie für verschiedene Prozesse (wie Stoffwechsel, Replikation usw.) benötigen, durch die Hydrolyse von ATP erzeugen, wobei Adenosiddiphosphat (ADT) entsteht. Gäbe es also kein ATP in Ihrem Körper, könnten Sie sich buchstäblich nicht bewegen oder gar atmen.
-            </p>
-        </div>
+    <header>
+        <h1>Header Section</h1>
+    </header>
+    <div class="image-container">
+        <img src="ATP.png" alt="Image 1">
+        <img src="ATP.gif" alt="Image 2">
+    </div>
+    <div class="text-field">
+        <p>Adenozintriphosphat (ATP) wird oft als die in den lebenden Zellen verwendete Energiewährung bezeichnet. Das liegt daran, dass die Zellen die Energie, die sie für verschiedene Prozesse (wie Stoffwechsel, Replikation usw.) benötigen, durch die Hydrolyse von ATP erzeugen, wobei Adenosiddiphosphat (ADT) entsteht. Gäbe es also kein ATP in Ihrem Körper, könnten Sie sich buchstäblich nicht bewegen oder gar atmen.</p>
     </div>
 </body>
 </html>
