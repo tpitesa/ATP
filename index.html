@@ -17,12 +17,21 @@
         }
         .image-container {
             display: flex;
-            justify-content: space-between; /* Distribute space evenly between images */
+            justify-content: space-between;
             margin-bottom: 20px;
         }
-        .image-container img {
-            max-width: 48%; /* Set max width to 48% to allow space for margins */
-            height: auto; /* Let the height adjust automatically */
+        .image-wrapper {
+            width: 48%; /* Set width to 48% to allow space for margins */
+            position: relative;
+            padding-top: 48%; /* Maintain aspect ratio (1:1) */
+        }
+        .image-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Maintain aspect ratio and fit image within the container */
         }
         .text-field {
             text-align: justify; /* Set the text alignment to justify */
@@ -43,7 +52,9 @@
         <img src="ATP.gif" alt="Image 2">
     </div>
     <div class="text-field">
-        <p>Adenozintriphosphat (ATP) wird oft als die in den lebenden Zellen verwendete Energiewährung bezeichnet. Das liegt daran, dass die Zellen die Energie, die sie für verschiedene Prozesse (wie Stoffwechsel, Replikation usw.) benötigen, durch die Hydrolyse von ATP erzeugen, wobei Adenosiddiphosphat (ADT) entsteht. Gäbe es also kein ATP in Ihrem Körper, könnten Sie sich buchstäblich nicht bewegen oder gar atmen.</p>
+        <p> Adenosintriphosphat (ATP) wird oft als die in den lebenden Zellen verwendete Energiewährung bezeichnet. 
+            Das liegt daran, dass die Zellen die Energie, welche sie für verschiedene Prozesse (wie Stoffwechsel, Replikation etc.) benötigen, 
+            durch die Hydrolyse von ATP zu Adenosindiphosphat (ADP) erzeugen. Gäbe es also kein ATP in unsere, Körper, könnten wir uns weder bewegen noch atmen.</p>
     </div>
 </body>
 </html>
