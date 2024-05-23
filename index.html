@@ -17,21 +17,12 @@
         }
         .image-container {
             display: flex;
-            justify-content: center;
+            justify-content: space-between; /* Distribute space evenly between images */
             margin-bottom: 20px;
         }
-        .image-wrapper {
-            width: 50%; /* Set width to 50% of the page width */
-            position: relative;
-            padding-top: 100%; /* Set padding top to maintain the aspect ratio (1:1) */
-        }
-        .image-wrapper img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* Maintain aspect ratio and fit image within the container */
+        .image-container img {
+            max-width: 48%; /* Set max width to 48% to allow space for margins */
+            height: auto; /* Let the height adjust automatically */
         }
         .text-field {
             text-align: justify; /* Set the text alignment to justify */
